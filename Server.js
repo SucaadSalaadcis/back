@@ -25,7 +25,9 @@ app.post('/jwt',async(req, res) => {
     })
     res.send({token})
 });
-
+app.get('/',async(req, res) => {
+  res.json("Hello world!")
+});
 
 // api hormuud
 app.post("/onlinePayment", async function (req, res) {
